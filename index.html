@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans&family=Roboto&display=swap" rel="stylesheet">
+    
+
+    <title>Encriptador de texto</title>
+</head>
+<body>
+        <main class="contenedor">
+
+            <header class="encabezado">
+                <img src="./img/Logo.png" alt="" class="logo">
+                <h1 class="titulo-app">Encriptador de texto</Encriptador></h1>
+
+               <button class="boton-modo">
+                <span>
+                    <i class="fa-solid fa-sun"></i>
+                </span>
+
+                  <span>
+                    <i class="fa-solid fa-moon"></i>
+                </span>
+
+
+               </button>
+            </header>
+
+            <section class="paneles">
+            <div class="panel-izquierdo">
+                <textarea name="" id="texto-ingresado" placeholder="Ingrese aquí su texto" oninput="this.value = this.value.replace(/[^a-z 0-9]/,'')" cols="30" rows="10"></textarea>
+                <p class="advertencia"><i class="fa-solid fa-exclamation"></i> No se podrán ingresar mayúsculas ni caracteres especiales.</p>
+                  
+              <section class="botonera">
+
+                <button class="encriptar" onclick="encriptar(this.value)">Encriptar</button>
+                <button class="desencriptar" onclick="desencriptar(this.value)">Desencriptar</button>
+             
+             </section>
+                  
+                </div>
+
+
+            <div class="panel-derecho">
+                <img class="robot" src="./img/robot-escribiendo.png" alt="" >
+                <p class="mensaje-ningun">Ningún texto a la vista.</p>
+                <textarea name="" id="texto-resultado" cols="30" rows="10"></textarea>
+                <button class="copiar">Copialo!</button>
+            </div>
+            </section>
+
+            
+
+        </main>
+     
+
+    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/1618db66d0.js" crossorigin="anonymous"></script>
+</body>
+</html>
