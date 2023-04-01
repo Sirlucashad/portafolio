@@ -57,6 +57,18 @@
     }
 }
 
+@media (min-width: 992px) {
+    .info__texto{
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        margin-top: 11.2rem;
+    
+       
+    
+    }
+}
+
 /*---------------------------------------------------------------------------------*/
 
 .info__presentacion{
