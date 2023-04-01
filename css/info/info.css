@@ -1,0 +1,209 @@
+.info{
+
+    width: 80%;
+    display: flex;
+  
+    flex-direction: row;
+    background: rgba(255,255,255,1);
+    background: -moz-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 47%, rgba(237,237,237,1) 100%);
+    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(255,255,255,1)), color-stop(47%, rgba(246,246,246,1)), color-stop(100%, rgba(237,237,237,1)));
+    background: -webkit-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 47%, rgba(237,237,237,1) 100%);
+    background: -o-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 47%, rgba(237,237,237,1) 100%);
+    background: -ms-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 47%, rgba(237,237,237,1) 100%);
+    background: linear-gradient(to right, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 47%, rgba(237,237,237,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ededed', GradientType=1 );
+    margin: 12rem auto 8rem auto;
+    
+    
+
+}
+
+@media (max-width: 768px) {
+    .info{
+        flex-direction: column-reverse;
+        margin: 0 auto;
+    }
+}
+
+@media (min-width:768px) and (max-width: 992px) {
+    .info{
+        flex-direction: column-reverse;
+        margin: 0 auto;
+    }
+}
+
+
+
+
+/* INFO-------------------------------------------------------------*/
+
+
+.info__texto{
+    width: 100%;
+    margin-top: 8rem;
+    text-align: center;
+ 
+
+}
+
+@media (min-width: 768px) {
+    .info__texto{
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+    
+       
+    
+    }
+}
+
+/*---------------------------------------------------------------------------------*/
+
+.info__presentacion{
+    font-size: 7.5rem;
+    color:black;
+    font-family: 'Caveat', cursive;
+    margin-bottom: 2rem;
+    margin: 0 auto;
+
+}
+
+@media (max-width: 768px) {
+    .info__presentacion{
+        font-size: 3.5rem;
+        margin: 0 auto;
+    }
+}
+
+/*---------------------------------------------------------------------------------*/
+
+.info__presentacionsecundaria{
+    font-size: 3rem;
+    color: rgb(110, 109, 109);
+   
+}
+
+@media (max-width: 768px) {
+    .info__presentacionsecundaria{
+        font-size: 1.5rem;
+    
+    }
+}
+
+/*---------------------------------------------------------------------------------*/
+
+.nombre{
+    color: rgb(238, 53, 139);
+}
+
+/*---------------------------------------------------------------------------------*/
+
+.developer{
+    color: rgb(73, 214, 139);
+}
+
+/*---------------------------------------------------------------------------------*/
+
+.info__foto{
+    max-width: 50rem;
+    min-width: 25rem;
+    width: 100%;
+    max-height: 50rem;
+    height: 100%;
+    border-radius: 100%;
+    margin: 0 auto;
+    margin-top: 3rem;
+    box-shadow: 1rem 1rem 1rem;
+    
+  
+    
+}
+
+
+
+@media (max-width: 768px) {
+    .info__foto{
+        width: 25rem;
+        height: 25rem;
+    
+    }
+}
+
+@media (min-width:768px) and (max-width: 992px) {
+    .info__foto{
+        max-width: 45rem;
+        width: 100%;
+        max-height: 45rem;
+        height: 100%;
+        margin-bottom: 3rem;
+        margin-top: 12rem;
+    
+    }
+}
+
+/*---------------------------------------------------------------------------------*/
+
+.info__navegador{
+    display: flex;
+    justify-content: center;
+    font-size: 1.5rem;
+   
+}
+
+@media (max-width: 768px) {
+    .info__navegador{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin: 0 30%;
+        justify-items: center;
+        
+        
+    }
+}
+
+@media (min-width:768px) and (max-width: 992px) {
+    .info__navegador{
+        display: flex;
+        margin: 0 30%;
+        justify-items: center;
+        margin-bottom: 4rem;
+        
+        
+    }
+}
+
+/*---------------------------------------------------------------------------------*/
+
+.info__navegador a{
+    text-decoration: none;
+    padding: 1.5rem ;
+    color: black;
+    text-align: center;
+    margin: 0 0;
+    height: 10rem;
+    width: 10rem;
+     
+}
+
+
+
+@media (max-width: 768px) {
+    .info__navegador a{
+        text-align: center;
+        padding-top: 2rem;
+        margin-right: 15%;
+        margin-left: 15%;
+    
+    }
+    
+}
+
+/*---------------------------------------------------------------------------------*/
+
+.info__navegador a:hover{
+   color: black;
+   background-color: rgb(215, 215, 215);
+   border-radius: 5rem;
+   height: 10rem;
+   width: 10rem;
+}

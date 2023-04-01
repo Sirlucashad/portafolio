@@ -1,0 +1,112 @@
+
+    /*hobbbies-------------------------*/
+
+
+
+
+    .hobbies{
+        
+        background-color: azure;
+        width: 100%;
+        margin: 0 auto;
+        background-image: url("../../imagenes/pared.jpg");
+        background-position: cover;
+        padding-bottom: 8rem;
+        text-align: center; 
+      
+        
+    }
+
+    @media (max-width: 768px) {
+        .hobbies{
+            margin: 0 auto;
+        
+        }
+    }
+
+    /*---------------------------------------------------------------------------------*/
+
+    
+    
+
+    .hobbies__titulo{
+        text-align: center;
+        font-size: 5rem;
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+    }
+
+    @media (max-width: 768px) {
+        h3.hobbies__titulo{
+            font-size:4.5rem;
+        }
+    }
+
+    /*---------------------------------------------------------------------------------*/
+
+
+    .hobbies__imagenes{
+        display: flex;
+        justify-content: end;
+    }
+
+    /*---------------------------------------------------------------------------------*/
+
+
+    .hobbies__imagen{
+        box-shadow: 1.5rem 1.5rem 1.5rem;
+       
+        
+       
+      
+       
+    }
+
+    @media (max-width: 768px) {
+        .hobbies__imagen{
+            min-width: 25rem;
+            min-height: 10rem;
+            width: 95%;
+            margin: 0 auto;
+            min-width: 10rem;
+            min-height: 5;
+           
+        }
+    }
+
+    
+    @media (min-width:768px) and (max-width: 992px) {
+        .hobbies__imagen{
+            max-width: 75rem;
+            min-height: 10rem;
+            width: 100%;
+            margin: 0 auto;
+            min-width: 10rem;
+            min-height: 5;
+           
+        }
+    }
+
+    /*---------------------------------------------------------------------------------*/
+
+    .hobbies__bonsai{ 
+        max-width: 35rem;
+        max-height: 45rem;
+        margin-top: 26rem;
+        margin-right: 1rem;
+        display: none;
+      
+      
+       
+        
+        
+       
+    }
+
+    @media (max-width: 768px) {
+        .hobbies__bonsai{
+            width: 10rem;
+            height:5rem;
+            display: none;
+        }
+    }

@@ -1,0 +1,125 @@
+/* skills----------------------------------------------------------------------*/
+
+.skills__titulo{
+    margin-top: 3.5rem;
+    font-size: 4rem;
+    margin-left: 5rem;
+
+}
+
+/*---------------------------------------------------------------------------------*/
+
+.skills__contenedor{
+    display: grid;
+    grid-template-columns:repeat(5, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    margin: 5rem 10%;    
+}
+
+@media (max-width: 768px) {
+    .skills__contenedor{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+    }          
+}
+
+/*---------------------------------------------------------------------------------*/
+
+div .skill{
+    margin: 0 auto;
+}
+
+/*---------------------------------------------------------------------------------*/
+
+.skill i{
+    font-size: 10rem;
+    padding: 0;
+    border: .2rem solid black;
+    border-radius: 1rem;
+    height: 16rem;
+    width: 16rem;
+    text-align: center;
+    padding-top: 2.5rem;
+    margin-bottom: 2rem;
+    margin-top: 1.5rem;
+    box-shadow: .5rem .5rem .5rem;
+    background-color: rgb(98, 114, 139);
+    }
+
+    @media (max-width: 768px) { 
+        .skill i{
+            height: 8rem;
+            width: 8rem;
+            font-size: 5rem;
+            align-items: center;
+            vertical-align: middle;
+            margin-bottom: 0rem;
+            padding-top: 1.5rem;
+            padding-bottom: 0;
+        }
+    }
+
+    @media (min-width:768px) and (max-width: 992px) { 
+        .skill i{
+            height: 12rem;
+            width: 12rem;
+            font-size: 5rem;
+            align-items: center;
+            vertical-align: middle;
+            margin-bottom: 0rem;
+            padding-top: 3rem;
+            padding-bottom: 0;
+        }
+    }
+
+    /*---------------------------------------------------------------------------------*/
+
+    .skill i:hover{
+        
+        background-color: rgb(142, 182, 235);
+        font-size: 12rem;
+        padding-top: 1.5rem;
+    }
+
+    /*---------------------------------------------------------------------------------*/
+
+    @media (max-width: 768px) {
+        .skill i:hover{
+            font-size:6rem;
+            padding-top: 1rem;
+        }
+    }
+
+    /*---------------------------------------------------------------------------------*/
+
+
+    .skill__nombre{
+        font-family: 'Caveat', cursive;
+        text-transform: uppercase;
+        font-size: 3rem;
+        text-align: center;
+        
+    }
+
+    @media (max-width: 768px) {
+        .skill__nombre{
+            font-family: 'Caveat', cursive;
+            text-transform: uppercase;
+            font-size: 1.5rem;
+            text-align: center;
+            
+        }
+        
+    }
+
+    @media (min-width:768px) and (max-width: 992px) {
+        .skill__nombre{
+            font-family: 'Caveat', cursive;
+            text-transform: uppercase;
+            font-size: 2rem;
+            text-align: center;
+            
+        }
+        
+    }
